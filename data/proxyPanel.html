@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script>
+      addon.port.on("msg", function(what, text) {
+        document.getElementById(what).textContent = text;
+      });
+    </script>
+    <style>
+      body {background-color: #ddd}
+      h1 {font-size:20px;}
+      #status {font-weight:bold; color: #579}
+      #connections {font-weight:bold; color: #874}
+    </style>
+  </head>
+  <body>
+    <table>
+      <h1>Tor Flashproxy Badge</h1>
+      <p>
+        Tor Flashproxy is <span id="status">starting up</span>. By now you received
+        <span id="connections">no</span> connections from anyone trying to reach the
+        open internet. Please keep in mind that even if you don't receive any
+        connections you are helping with your presence. Thanks for that!
+      </p>
+  </body>
+</html>
