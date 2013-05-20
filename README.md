@@ -8,7 +8,8 @@ oppressive regimes
 
 ## Description
 
-TODO
+For more information on how it works see the
+[Flash Proxy Web Page](http://crypto.stanford.edu/flashproxy/).
 
 ##  FAQ
 
