@@ -3,7 +3,7 @@
   "description": "Simple extension that makes Firefox a bridge for censored users in countries with oppressive regimes",
   "author": "Christian Sturm",
   "dependencies": ["api-utils", "addon-kit"],
-  "version": "0.1.0",
+  "version": "0.1.1",
   "fullName": "Tor Flashproxy Badge",
   "id": "jid0-1kqApO5BUHwjBQft5BEUXHXZjCA",
   "name": "tor-flashproxy-badge"
