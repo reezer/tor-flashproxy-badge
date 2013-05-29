@@ -67,6 +67,9 @@ down (~320 lines instead of ~1060) and some modifications
 most of the code and especially the idea is based off
 [Tor's flashproxy project](https://gitweb.torproject.org/flashproxy.git).
 
+License is ISC, which means BSD license, with language that
+was made unnecessary by the Berne convention removed.
+
 Copyright (c) 2013, Christian Sturm <reezer@reezer.org>
 
 Permission to use, copy, modify, and/or distribute this 
