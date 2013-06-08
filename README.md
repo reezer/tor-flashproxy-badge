@@ -62,11 +62,6 @@ It looks a bit different, but does the very same thing.
 
 ## License
 
-Please note that even though flashproxy.js had a major strip
-down (~320 lines instead of ~1060) and some modifications
-most of the code and especially the idea is based off
-[Tor's flashproxy project](https://gitweb.torproject.org/flashproxy.git).
-
 License is ISC, which means BSD license, with language that
 was made unnecessary by the Berne convention removed.
 
