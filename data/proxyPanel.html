@@ -2,9 +2,22 @@
   <head>
     <meta charset="utf-8">
     <script>
-      addon.port.on("msg", function(what, text) {
-        document.getElementById(what).textContent = text;
+      addon.port.on("status-update", function(msg) {
+        let element = document.getElementById("status");
+        switch (msg) {
+          case "connecting":
+            element.textContent = "serving a client right now";
+          case "waiting":
+            element.textContext = "up and running, waiting for connections";
+          case "dying":
+            element.textContext = "having a problem. If you keep reading this after browser restart, please report this";
+          case "starting":
+            element.textContext = "up and running, waiting for connections";
+        }
       });
+      addon.port.on("connections-update", function(count) {
+        document.getElementById("connections").textContent = count;
+      }
     </script>
     <style>
       body {background-color: #ddd}
