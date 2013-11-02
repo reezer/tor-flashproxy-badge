@@ -7,12 +7,16 @@
         switch (msg) {
           case "connecting":
             element.textContent = "serving a client right now";
+            break;
           case "waiting":
             element.textContent = "up and running, waiting for connections";
+            break;
           case "error":
             element.textContent = "having a problem. If you keep reading this after browser restart, please report this";
+            break;
           case "starting":
             element.textContent = "up and running, waiting for connections";
+            break;
         }
       });
       addon.port.on("connections", function(count) {
