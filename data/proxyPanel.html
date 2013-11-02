@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <script>
       addon.port.on("status", function(msg) {
-        let element = document.getElementById("status");
+        var element = document.getElementById("status");
         switch (msg) {
           case "connecting":
             element.textContent = "serving a client right now";
