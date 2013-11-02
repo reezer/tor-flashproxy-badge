@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8">
     <script>
-      addon.port.on("status-update", function(msg) {
+      addon.port.on("status", function(msg) {
         let element = document.getElementById("status");
         switch (msg) {
           case "connecting":
@@ -15,7 +15,7 @@
             element.textContext = "up and running, waiting for connections";
         }
       });
-      addon.port.on("connections-update", function(count) {
+      addon.port.on("connections", function(count) {
         document.getElementById("connections").textContent = count;
       }
     </script>
