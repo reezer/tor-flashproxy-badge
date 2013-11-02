@@ -8,16 +8,16 @@
           case "connecting":
             element.textContent = "serving a client right now";
           case "waiting":
-            element.textContext = "up and running, waiting for connections";
-          case "dying":
-            element.textContext = "having a problem. If you keep reading this after browser restart, please report this";
+            element.textContent = "up and running, waiting for connections";
+          case "error":
+            element.textContent = "having a problem. If you keep reading this after browser restart, please report this";
           case "starting":
-            element.textContext = "up and running, waiting for connections";
+            element.textContent = "up and running, waiting for connections";
         }
       });
       addon.port.on("connections", function(count) {
         document.getElementById("connections").textContent = count;
-      }
+      });
     </script>
     <style>
       body {background-color: #ddd}
