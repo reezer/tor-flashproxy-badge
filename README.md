@@ -50,6 +50,15 @@ There is a great extension that originally inspired Tor
 Flashproxy Badge called [Cupcake](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc) by Griffin Boyce.
 It looks a bit different, but does the very same thing.
 
+### The icons becomes red all the time. What should I do?
+
+If you are using an extension such as NoScript or RequestPolicy
+please make sure to permit the execution of JavaScript for both
+[https://crypto.stanford.edu/flashproxy/](https://crypto.stanford.edu/flashproxy/)
+and [https://fp-facilitator.org/](https://fp-facilitator.org/).
+Should there still be problems please file a new issue on
+[GitHub](https://github.com/reezer/tor-flashproxy-badge/issues).
+
 ### TODO
 
 * Write a description
