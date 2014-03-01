@@ -12,7 +12,7 @@
             element.textContent = "up and running, waiting for connections";
             break;
           case "error":
-            element.textContent = "having a problem. If you keep reading this after browser restart, please report this";
+            element.innerHTML = 'having a problem. <a method="restart" href="#">Click here to restart.</a> If this keeps happening, please inform us';
             break;
           case "starting":
             element.textContent = "up and running, waiting for connections";
@@ -22,6 +22,13 @@
       addon.port.on("connections", function(count) {
         document.getElementById("connections").textContent = count;
       });
+      window.addEventListener('click', function(event) {
+        var target = event.target;
+        if (target.nodeName === 'A') {
+          addon.port.emit('restart', target.dataset["method"]);
+          console.log(t.dataset["method"]);
+        }
+     });
     </script>
     <style>
       body {background-color: #ddd}
