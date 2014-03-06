@@ -12,7 +12,7 @@
             element.textContent = "up and running, waiting for connections";
             break;
           case "error":
-            element.innerHTML = 'having a problem. <a method="restart" href="#">Click here to restart.</a> If this keeps happening, please inform us';
+            element.innerHTML = 'having a problem. <a data-method="restart" href="#">Click here to restart.</a> If this keeps happening, please inform us';
             break;
           case "starting":
             element.textContent = "up and running, waiting for connections";
@@ -25,8 +25,8 @@
       window.addEventListener('click', function(event) {
         var target = event.target;
         if (target.nodeName === 'A') {
-          addon.port.emit('restart', target.dataset["method"]);
-          console.log(t.dataset["method"]);
+          method = target.dataset["method"]
+          addon.port.emit(method);
         }
      });
     </script>
