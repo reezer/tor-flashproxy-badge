@@ -4,7 +4,7 @@
   "author": "Christian Sturm",
   "contributors": ["Sebastian G.", "Lorenzo Manacorda"],
   "dependencies": ["api-utils", "addon-kit"],
-  "version": "0.2.6",
+  "version": "0.2.7",
   "fullName": "Tor Flashproxy Badge",
   "id": "jid0-1kqApO5BUHwjBQft5BEUXHXZjCA",
   "name": "tor-flashproxy-badge"
