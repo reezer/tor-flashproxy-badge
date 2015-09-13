@@ -1,0 +1,8 @@
+<script type="text/javascript" src="https://crypto.stanford.edu/flashproxy/flashproxy.js"></script>
+<script>
+  function puts(msg) {
+    self.port.emit("msg", msg);
+  }
+  var fp = new FlashProxy();
+  fp.start();
+</script>

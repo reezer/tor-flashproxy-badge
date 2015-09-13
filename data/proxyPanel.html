@@ -24,8 +24,8 @@
       });
       window.addEventListener('click', function(event) {
         var target = event.target;
-        if (target.nodeName === 'A') {
-          method = target.dataset["method"]
+        if (target.dataset["method"]) {
+          var method = target.dataset["method"]
           addon.port.emit(method);
         }
      });
