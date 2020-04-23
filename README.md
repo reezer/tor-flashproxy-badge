@@ -1,3 +1,7 @@
+# DEPRECATED
+
+Please see [snowflake](https://snowflake.torproject.org/) for a replacement.
+
 # Tor Flashproxy Badge
 
 ## Synopsis
